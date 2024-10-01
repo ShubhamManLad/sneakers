@@ -1,0 +1,300 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: hsl(223, 64%, 98%);
+  color: hsl(220, 13%, 13%);
+  padding: 20px;
+  margin-inline: 50px;
+}
+
+button{
+  border: none;
+}
+
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  align-content: end;
+}
+
+.navOptions {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-top: 8px;
+}
+
+.menu{
+  display: none;
+  margin-top: 10px;
+}
+
+.sideBar{
+  display: none;
+}
+
+.navLink{
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  font-weight: 200;
+}
+
+.cart-profile {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  justify-items: flex-end;
+}
+
+.cart-profile div{
+  /* justify-items: end; */
+  /* align-items: end; */
+}
+
+.cart-profile div img{
+  margin-top: 14px;
+  align-self: end;
+  justify-self: end;
+}
+
+.cartModal{
+  /* border: solid; */
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 80px;
+  /* width: 360px; */
+  background-color: white;
+  box-shadow: 2px 4px 8px rgba(0.2, 0.2, 0.2, 0.2);
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.cartList{
+  list-style: none;
+  margin: 8px;
+}
+
+.cartList li{
+  display: flex;
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  margin: 2px;
+  font-weight: 100;
+  font-size: 12px;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+.cartList li div{
+  margin-inline: 20px;
+}
+
+
+.cartImage{
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.checkOut{
+  gap: 10px;
+  background-color: hsl(26, 100%, 55%);
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  display: none;
+}
+
+.content{
+  margin-inline: 200px;
+}
+
+.itemCard{
+  display: flex;
+  margin: 20px;
+  
+}
+
+.itemImage{
+  border-radius: 16px;
+}
+
+.itemImages{
+  margin: 30px;
+}
+
+.itemData{
+  margin: 30px;
+}
+
+.imgList{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.itemTitle{
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  font-weight: 200;
+}
+
+.itemDesc{
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  font-weight: 200;
+
+}
+
+.itemOptions{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  
+}
+
+.minus{
+  padding: 10px;
+  font-size: 16px;
+  color: hsl(26, 100%, 55%);
+  border: none;
+}
+.plus{
+  padding: 10px;
+  font-size: 16px;
+  color: hsl(26, 100%, 55%);
+  border: none;
+}
+
+.addItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: hsl(26, 100%, 55%);
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addItem:hover{
+  background-color: hsl(26, 100%, 60%);
+
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Lightbox content */
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.caption {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.navButton{
+  display: none;
+}
+
+@media (max-width: 768px){
+
+  body{
+    margin-inline:10px;
+  }
+
+  .navOptions{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  .sideBar{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    width: 360px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .sideOptions{
+    list-style: none;
+    gap: 30px;
+    margin-top: 8px;
+  }
+
+  .sideOptions li{
+    margin: 40px;
+  }
+
+  .content{
+    margin-inline: 0px;
+    display: flex;
+  }
+
+  .imgList{
+    display: none;
+  }
+
+  .itemCard{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navButton{
+    display: flex;
+    margin: 2px;
+  }
+
+
+
+
+}

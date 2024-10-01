@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneakers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="navBar">
+        <button id="menuButton">
+          <img id="menuImg" class="menu" src="assets/icon-menu.svg" width="20px" height="20px" >
+
+        </button>
+        <h1 class="logo">sneakers</h1>
+        <ul class="navOptions">
+          <li><a class="navLink" href="#">Collections</a></li>
+          <li><a class="navLink" href="#">Men</a></li>
+          <li><a class="navLink" href="#">Women</a></li>
+          <li><a class="navLink" href="#">About</a></li>
+          <li><a class="navLink" href="#">Contact</a></li>
+        </ul>
+        <div class="cart-profile">
+          <div>
+            <img src="assets/icon-cart.svg" alt="Cart" class="cart" id="cartButton">
+            
+          </div>
+
+
+          <img src="assets/image-avatar.png" alt="Profile" class="profile" width="50px">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="sideBar" id="sideBar">
+    <ul class="sideOptions">
+      <li><a class="navLink" href="#">Collections</a></li>
+      <li><a class="navLink" href="#">Men</a></li>
+      <li><a class="navLink" href="#">Women</a></li>
+      <li><a class="navLink" href="#">About</a></li>
+      <li><a class="navLink" href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class = "cartModal" id="cartModal">
+    <h3>Cart</h3>
+    <ul class="cartList" id="cartList">
+      <li>
+        <h3 style="padding: 100px;">Your cart is empty</h3>
+      </li>
+      
+
+    </ul>
+    <button class="checkOut" id="checkOutButton">
+      <b>CheckOut</b>
+    </button>
+
+
+  </div>
+
+  <div class="content">
+
+    <div class="itemCard">
+
+      <div class="itemImages">
+        <div style="display: flex; align-items: center;">
+          <img class="navButton" id="prevButton" src="assets/icon-previous.svg" width="10px" height="20px">
+          <img id="itemImage" class="itemImage" src="assets/image-product-1.jpg" width="350px">
+          <img class="navButton" id="nextButton" src="assets/icon-next.svg" width="10px" height="20px">
+
+        </div>
+
+        <ul class="imgList">
+          <li><img class="itemImage" src="assets/image-product-1.jpg" width="80px" atrId="1"></li>
+          <li><img class="itemImage" src="assets/image-product-2.jpg" width="80px" atrId="2"></li>
+          <li><img class="itemImage" src="assets/image-product-3.jpg" width="80px" atrId="3"></li>
+          <li><img class="itemImage" src="assets/image-product-4.jpg" width="80px" atrId="4"></li>
+        </ul>
+      </div>
+
+      <div class="itemData">
+        <p class="itemTitle">Sneaker Company</p><br>
+        <h1 class="itemHeader">Fall Limited Edition Sneakers</h1><br><br>
+        <p class="itemDesc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p><br>
+
+        <h2>$125.00</h2>
+        <p><s>$250.00</s></p><br><br><br>
+
+        <div class="itemOptions">
+          <div>
+            <button class="minus" id="decButton">-</button>
+            <span class="quantity" id="qtyText">1</span>
+            <button class="plus" id="incButton">+</button>
+          </div>
+          <button class="addItem" id="addButton">
+            <img src="assets/icon-cart.svg">
+            <b>Add to cart</b>
+            
+          </button>
+        </div>
+        
+      </div>
+
+
+    </div>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightboxImage">
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
